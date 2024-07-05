@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>events</title>
+    <link rel="stylesheet" href="icon/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <section>
+        <div class="">
+            <img src="home.jpg" class="header" alt="">
+        </div>
+        <div class="container">
+            <div class="center">
+                <div class="search-panel">
+
+                    <input type="text" id="input-handel" class="input-text" value="hello world" placeholder="Enter Wish">
+                    <button class="btn-add" onclick="textAddBox()">Add</button>
+
+                </div>
+
+            </div>
+            <h3 class="text-prime"> <i class="fa-regular fa-note-sticky"></i> content-box</h3>
+            <div class="serach-text" onmouseleave="removebg()" onmouseenter="changebg()" id="text-contain">
+
+            </div>
+            <!-- difrentevent -->
+            <div class="row">
+                <button class="btn-add event event-1" onclick="textColorChange()">Red</button>
+                <button class="btn-add event event-1" onclick="capital()">Capital</button>
+            </div>
+            <div class="">
+             <h5 class="text-note"> <i class="fa-solid fa-circle"></i> Wish to font max 60px zoom it you can write to text size in below box</h5>
+               <input type="number" id="size-handel" onkeyup="sizemanage()" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+               type = "number"
+               maxlength = "2" class="size-box" placeholder="Enter-size">
+            </div>
+        </div>
+
+    </section>
+    <script src="icon/all.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
